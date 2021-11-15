@@ -1,0 +1,6 @@
+{
+  "layout": "layouts/result.njk",
+  "tags": [
+    "game-results"
+  ]
+}

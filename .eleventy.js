@@ -47,6 +47,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("readableDate", dateObj => {
+    console.log(dateObj)
     return DateTime.fromJSDate(dateObj, {
       zone: 'utc'
     }).toFormat("dd LLL yyyy");

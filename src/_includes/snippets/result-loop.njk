@@ -7,7 +7,7 @@
         </a>
         <p>
           Posted On:
-          <time datetime="{{ res.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+          <span class="small">{{ res.data.posted }}</span>
         </p>
         <p>
         {% for tag in res.data.tags | filterTagList %}
@@ -16,7 +16,7 @@
         {% endfor %}
       </p>
         <p>{{ res.data.summary }}</p>
-        <a href="{{ res.url | url }}" class="link-fancy">Read more...</a>
+        <a href="{{ res.url | url }}" class="link-fancy">Click here to read more...</a>
       </div>
     {% endfor %}
   </div>
